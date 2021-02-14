@@ -12,4 +12,9 @@ public struct Weapon
         Name = name;
         Damage = damage;
     }
+
+    public void PrintWeaponStats()
+    {
+        Debug.Log($"Weapon {Name} - {Damage} DMB");
+    }
 }

@@ -17,8 +17,14 @@ public class Character
         Name = name;
     }
 
-    public void PrintStatsInfo()
+    public virtual void PrintStatsInfo()
     {
         Debug.Log($"Hero: {Name} Exp: {Exp}");
+    }
+
+    private void Reset()
+    {
+        Name = "Not Assigned";
+        Exp = 0;
     }
 }
